@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario pacientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assents/icono hospital.jpg">
+    <script src="https://kit.fontawesome.com/b74d6ed8cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><img src="/assents/logo hospital.png" alt="Logo hospital" width="46px" height="46px">
+        <h1>HARMONIOUS HOSPITAL</h1>
+    </header>
+    <main>
+        <form id="registro-pacientes-formulario">
+            <h2>REGISTRO DE PACIENTES</h2>
+            <label for="nombre_paciente">Nombre del paciente:<span> *</span></label>
+            <input type="text" id="paciente" name="paciente" required>
+            <label for="apellido_paciente">Apellido del paciente:<span> *</span></label>
+            <input type="text" id="apellido_paciente" name="apellido_paciente" required>
+            <label for="cedula">Cedula del paciente:<span> *</span></label>
+            <input type="text" id="cedula_paciente" name="cedula_paciente" required>
+            <label for="edad">Edad del paciente:<span> *</span></label>
+            <input type="text" id="edad_paciente" name="edad_paciente" required>
+            <label for="telefono">Telefono del paciente:<span> *</span></label>
+            <input type="tel" id="telefono_paciente" name="telefono_paciente" required>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Medicina interna">Medicina Interna</option>
+                <option value="Dermatología">Dermatología </option>
+                <option value="Rehabilitacion fisica">Rehabilitacion fisica</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Odontología ">Odontología </option>
+                <option value="Radiologia">Radiologia</option>
+            </select>
+
+            <div class="boton-container">
+                <input type="submit" value="Enviar">
+                <input type="button" id="botonVolver" value="Volver">
+            </div>
+        </form>
+    </main>
+    <script src="volver.js"></script>
+    <script src="guardado-paciente.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assents/icono hospital.jpg">
+    <script src="https://kit.fontawesome.com/b74d6ed8cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="/assents/logo hospital.png" alt="Logo hospital" width="46px" height="46px">
+        <h1>HARMONIOUS HOSPITAL</h1>
+    </header>
+    <main class="tabla-container">
+        <h2 style="margin-bottom: 1em;">LISTADO DE MÉDICOS</h2>
+        <div style="overflow: auto;">
+            <table id="tabla-medicos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Número de Cédula</th>
+                        <th>Especialidad</th>
+                        <th>Consultorio</th>
+                        <th>Correo de contacto</th>
+                        <th>Pacientes a cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+        </div>
+    </main>
+    <script src="medicos-cookies.js"></script>
+    <script src="volver.js"></script>
+</body>
+
+</html>
